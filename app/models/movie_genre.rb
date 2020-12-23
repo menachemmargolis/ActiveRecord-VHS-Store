@@ -1,6 +1,6 @@
 class MovieGenre < ActiveRecord::Base
 
-    belongs_to :movies
-    belongs_to :genres
+    belongs_to :movie
+    belongs_to :genre
     
 end
