@@ -4,7 +4,7 @@ class Rental < ActiveRecord::Base
     belongs_to :client
 
     def due_date
-        binding.pry
+    binding.pry
      self.created_at
     end
 

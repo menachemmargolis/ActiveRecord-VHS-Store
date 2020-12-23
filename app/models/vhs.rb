@@ -4,7 +4,7 @@ class Vhs < ActiveRecord::Base
     has_many :clients, through: :rentals
     belongs_to :movie
     private
-
+    puts "lhbfkjhv"
     # generates serial number based on the title
     def add_serial_number
         serial_number = serial_number_stub

@@ -34,6 +34,26 @@ You will be working on a six-model domain: `Client`, `Rental`, `Vhs`, `Movie`, `
     |
   Vhs >---- Movie ----< MovieGenre >---- Genre
 ```
+#these are our joiners 
+
+MovieGenre has the movie id, and the Genre id.
+
+Rental has the Client id, and the Vhs id.
+
+#this is a one to many 
+
+Vhs has the movie id.
+
+#
+
+Client has a name id , and address 
+
+Movie has a == :title, :string, :release_date, :integer, :length, 
+:integer :director, :string, :if_female, :boolean, :discription, :string
+ 
+
+
+
 
 ![Domain model](erd.png)
 
