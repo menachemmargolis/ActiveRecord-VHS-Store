@@ -3,9 +3,10 @@ class Rental < ActiveRecord::Base
     belongs_to :vhs
     belongs_to :client
 
-    # def due_date
-    #  self.created_at
-    # end
+    def due_date
+     self.created_at
+    end
+
 
 end
 

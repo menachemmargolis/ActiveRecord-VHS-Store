@@ -1,3 +1,4 @@
+
 Client.destroy_all
 Genre.destroy_all
 MovieGenre.destroy_all
@@ -10,7 +11,6 @@ MovieGenre.reset_pk_sequence
 Movie.reset_pk_sequence
 Rental.reset_pk_sequence
 Vhs.reset_pk_sequence
-
 
 
 def create_movie_joins(movie, genre_array)
