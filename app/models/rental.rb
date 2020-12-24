@@ -4,7 +4,7 @@ class Rental < ActiveRecord::Base
     belongs_to :client
 
     def due_date
-     self.created_at
+     self.created_at + 1.week
     end
 
 

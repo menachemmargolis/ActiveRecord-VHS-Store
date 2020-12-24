@@ -28,11 +28,11 @@ ActiveRecord::Schema.define(version: 2020_12_23_160523) do
 
   create_table "movies", force: :cascade do |t|
     t.string "title"
-    t.integer "release_date"
+    t.integer "year"
     t.integer "length"
     t.string "director"
     t.boolean "female_director"
-    t.string "discription"
+    t.string "description"
   end
 
   create_table "rentals", force: :cascade do |t|
