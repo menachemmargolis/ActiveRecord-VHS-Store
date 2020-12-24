@@ -4,10 +4,17 @@ class Rental < ActiveRecord::Base
     belongs_to :client
 
     def due_date
-     self.created_at + 1.week
+        self.created_at + 1.week
     end
 
+    
 
+    def self.past_due_date
+        binding.pry
+        self.all.select{|rental|rental.created_at > self.updated_at + 1.week}
+        
+    end
+   
 end
 
 # ### `Rental`
